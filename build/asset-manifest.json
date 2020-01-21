@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/about-me/static/css/main.14bfbcee.chunk.css",
+    "main.js": "/about-me/static/js/main.4dd3cd88.chunk.js",
+    "main.js.map": "/about-me/static/js/main.4dd3cd88.chunk.js.map",
+    "runtime-main.js": "/about-me/static/js/runtime-main.94733e7b.js",
+    "runtime-main.js.map": "/about-me/static/js/runtime-main.94733e7b.js.map",
+    "static/js/2.5ec817dd.chunk.js": "/about-me/static/js/2.5ec817dd.chunk.js",
+    "static/js/2.5ec817dd.chunk.js.map": "/about-me/static/js/2.5ec817dd.chunk.js.map",
+    "index.html": "/about-me/index.html",
+    "precache-manifest.e2f80c72cd9d576053352dad079d06cc.js": "/about-me/precache-manifest.e2f80c72cd9d576053352dad079d06cc.js",
+    "service-worker.js": "/about-me/service-worker.js",
+    "static/css/main.14bfbcee.chunk.css.map": "/about-me/static/css/main.14bfbcee.chunk.css.map",
+    "static/js/2.5ec817dd.chunk.js.LICENSE": "/about-me/static/js/2.5ec817dd.chunk.js.LICENSE",
+    "static/media/dev-ben-01.jpg": "/about-me/static/media/dev-ben-01.cdce558a.jpg",
+    "static/media/dev-ben-02.jpg": "/about-me/static/media/dev-ben-02.bbe659aa.jpg",
+    "static/media/devben.jpg": "/about-me/static/media/devben.fad96774.jpg",
+    "static/media/portfolio-01.jpg": "/about-me/static/media/portfolio-01.6f8d3455.jpg",
+    "static/media/portfolio-02.jpg": "/about-me/static/media/portfolio-02.238af781.jpg",
+    "static/media/portfolio-03.jpg": "/about-me/static/media/portfolio-03.216d2dde.jpg",
+    "static/media/portfolio-04.jpg": "/about-me/static/media/portfolio-04.a58fb775.jpg",
+    "static/media/portfolio-05.jpg": "/about-me/static/media/portfolio-05.84961aff.jpg",
+    "static/media/portfolio-06.jpg": "/about-me/static/media/portfolio-06.4eadc66e.jpg",
+    "static/media/portfolio-07.jpg": "/about-me/static/media/portfolio-07.7909856b.jpg",
+    "static/media/portfolio-08.jpg": "/about-me/static/media/portfolio-08.c4950993.jpg",
+    "static/media/portfolio-09.jpg": "/about-me/static/media/portfolio-09.b04311b2.jpg",
+    "static/media/portfolio-10.jpg": "/about-me/static/media/portfolio-10.1c291f59.jpg",
+    "static/media/portfolio-details.jpg": "/about-me/static/media/portfolio-details.6f8d3455.jpg",
+    "static/media/main.css": "/about-me/static/media/services-bg.97891b5e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94733e7b.js",
+    "static/js/2.5ec817dd.chunk.js",
+    "static/css/main.14bfbcee.chunk.css",
+    "static/js/main.4dd3cd88.chunk.js"
+  ]
+}
