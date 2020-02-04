@@ -473,11 +473,22 @@ header {
   transition: opacity 250ms linear, -webkit-transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear, -webkit-transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
+  -o-object-fit: fit;
+     object-fit: fit;
 }
 
 .portfolio__img:focus {
   position: relative;
   z-index: 2;
+}
+
+.portfolio__item-unavailable {
+  background: #303030;
+  overflow: hidden;
+}
+
+.portfolio__img-unavailable {
+  opacity: 0.1;
 }
 
 .portfolio__img:hover,

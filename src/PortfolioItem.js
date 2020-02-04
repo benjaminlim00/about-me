@@ -4,9 +4,8 @@ import Footer from './components/Footer';
 
 import logo from './img/devben.jpg';
 import headerPic from './img/dev-ben-01.jpg';
-import mainPic from './img/portfolio-details.jpg';
 
-export default function PortfolioItem() {
+export default function PortfolioItem(props) {
   const [showMenu, toggleMenu] = useState(false);
   const navLinks = document.querySelectorAll('.nav__link');
 
@@ -89,7 +88,6 @@ export default function PortfolioItem() {
           </ul>
         </nav>
       </header>
-
       <section className='intro'>
         <h1 className='section__title section__title--intro'>
           The title
@@ -100,15 +98,10 @@ export default function PortfolioItem() {
         </p>
         <img src={headerPic} alt='portfolio 1' className='intro__img' />
       </section>
-
       <div className='portfolio-item-individual'>
-        <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
-        </p>
+        <p>{props.location.state.contentOne}</p>
         <img
-          src={mainPic}
+          src={props.location.state.projectImage}
           alt='portfolio details'
           className='portfolio-project-img'
         />
@@ -123,7 +116,6 @@ export default function PortfolioItem() {
           magnam ipsum eius earum?
         </p>
       </div>
-
       <Footer />
     </div>
   );
