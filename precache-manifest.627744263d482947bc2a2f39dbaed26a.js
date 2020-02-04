@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6dc9932e3f5b64a5c4aefa3c7e8881a9",
+    "revision": "65cfd4a8636cb09c02c690051c20ec70",
     "url": "/about-me/index.html"
   },
   {
-    "revision": "eb4f4e2431d057210ad9",
-    "url": "/about-me/static/css/main.14bfbcee.chunk.css"
+    "revision": "03f27363c76c5066c744",
+    "url": "/about-me/static/css/main.a2dcf546.chunk.css"
   },
   {
-    "revision": "fd14489719dd8d89e647",
-    "url": "/about-me/static/js/2.5ec817dd.chunk.js"
+    "revision": "eba5e8db90fd4ad6eaf6",
+    "url": "/about-me/static/js/2.88bfd37a.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/about-me/static/js/2.5ec817dd.chunk.js.LICENSE"
+    "url": "/about-me/static/js/2.88bfd37a.chunk.js.LICENSE"
   },
   {
-    "revision": "eb4f4e2431d057210ad9",
-    "url": "/about-me/static/js/main.4dd3cd88.chunk.js"
+    "revision": "03f27363c76c5066c744",
+    "url": "/about-me/static/js/main.b9a1be72.chunk.js"
   },
   {
     "revision": "e2f8a07815204d57a151",
@@ -36,8 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/about-me/static/media/devben.fad96774.jpg"
   },
   {
-    "revision": "6f8d345507e607bc80d92919bac09487",
-    "url": "/about-me/static/media/portfolio-01.6f8d3455.jpg"
+    "revision": "1af87fa2f30d818dea0cd7828b3b1a51",
+    "url": "/about-me/static/media/portfolio-01-sq.1af87fa2.png"
+  },
+  {
+    "revision": "0fbdd91a4c3f5737c70b9ebc58fb539f",
+    "url": "/about-me/static/media/portfolio-01.0fbdd91a.png"
   },
   {
     "revision": "238af781fa615dcb77e87d8044ce9716",
@@ -74,10 +78,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1c291f59bb1965138c57e9c3f4a48128",
     "url": "/about-me/static/media/portfolio-10.1c291f59.jpg"
-  },
-  {
-    "revision": "6f8d345507e607bc80d92919bac09487",
-    "url": "/about-me/static/media/portfolio-details.6f8d3455.jpg"
   },
   {
     "revision": "97891b5e64572b2e21e43124857c4979",
