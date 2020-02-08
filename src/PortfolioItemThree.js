@@ -3,19 +3,21 @@ import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
 import logo from './img/devben.jpg';
-import headerPic from './img/dev-ben-01.jpg';
-import projectOneImage from './img/portfolio-01.png';
+import projectThreeTitleImage from './img/portfolioThree/header-image.jpg';
+import image2 from './img/portfolioThree/image1.jpg';
+import image1 from './img/portfolioThree/image2.jpg';
+import image3 from './img/portfolioThree/image3.jpg';
+import image4 from './img/portfolioThree/image4.jpg';
+import demo from './img/portfolioThree/demo.gif';
 
-export default function PortfolioItem(props) {
+export default function PortfolioItemTwp() {
   const [showMenu, toggleMenu] = useState(false);
   const navLinks = document.querySelectorAll('.nav__link');
 
   const handleClick = () => {
     if (showMenu) {
-      console.log('closing');
       document.body.classList.remove('nav-open');
     } else {
-      console.log('opening');
       document.body.classList.add('nav-open');
     }
     toggleMenu(!showMenu);
@@ -35,7 +37,7 @@ export default function PortfolioItem(props) {
     <div id='top'>
       <header>
         <div className='logo'>
-          <img src={logo} alt='headerpic' />
+          <img src={logo} alt='logo' />
         </div>
         <button className='nav-toggle' type='button' onClick={handleClick}>
           <span className='hamburger' />
@@ -91,35 +93,58 @@ export default function PortfolioItem(props) {
       </header>
       <section className='intro'>
         <h1 className='section__title section__title--intro'>
-          The title
-          <strong> of my project</strong>
+          Smart User Verification
+          <strong>CIMB</strong>
         </h1>
         <p className='section__subtitle section__subtitle--intro'>
-          A short subtitle
+          CIMB Bank Hackathon Finals
         </p>
-        <img src={headerPic} alt='portfolio 1' className='intro__img' />
+        <img
+          src={projectThreeTitleImage}
+          alt='portfolio 1'
+          className='intro__img'
+        />
       </section>
       <div className='portfolio-item-individual'>
         <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
+          This application was made during the finals of CIMB hosted hackathon
+          with the challenge statement of creating an innovative method of user
+          verification methods. With competitors from all over South-east Asia,
+          we had 24 hours to come up with an innovative idea and prototype
+          within 24 hours to allow secure financial transactions. For the
+          hackathon, I created this prototype which combined the use of Telegram
+          bots together with an native android app which made use of gestures as
+          a flexible and secure option for identity verification.
         </p>
         <img
-          src={projectOneImage}
+          src={image1}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
+        <img
+          src={image2}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
+        <img
+          src={image3}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
+        <img
+          src={image4}
           alt='portfolio details'
           className='portfolio-project-img'
         />
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et
-          amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur
-          incidunt?
+          Below is a video demostration of how the application only allows for
+          access when the user inputs the gesture that he/she registered with.
         </p>
-        <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
-        </p>
+        <img
+          src={demo}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
       </div>
       <Footer />
     </div>

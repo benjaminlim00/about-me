@@ -12,7 +12,15 @@
   }
 
   .portfolio-project-img {
+    width: 300px;
     align-self: center;
     margin: 2em 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .portfolio-project-large-img {
+    align-self: center;
+    margin: 2em 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
 }

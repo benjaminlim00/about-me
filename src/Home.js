@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
-import projectOneImage from './img/portfolio-01.png';
-
 export default function Home(props) {
   const [showMenu, toggleMenu] = useState(false);
   const navLinks = document.querySelectorAll('.nav__link');
@@ -159,36 +157,26 @@ export default function Home(props) {
         </p>
 
         <div className='portfolio'>
-          <Link
-            to={{
-              pathname: '/projects/1',
-              state: {
-                contentOne:
-                  'Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?',
-                projectImage: projectOneImage,
-              },
-            }}
-            className='portfolio__item'
-          >
+          <Link to='/projects/1' className='portfolio__item'>
             <img
-              src={require('./img/portfolio-01-sq.png')}
+              src={require('./img/portfolioOne/header-image.png')}
               alt='portfolio-1'
               className='portfolio__img'
             />
           </Link>
 
-          <Link to='#!' className='portfolio__item-unavailable'>
+          <Link to='/projects/2' className='portfolio__item'>
             <img
-              src={require('./img/portfolio-02.jpg')}
+              src={require('./img/portfolioTwo/header-image.jpg')}
               alt='portfolio-2'
-              className='portfolio__img-unavailable'
+              className='portfolio__img'
             />
           </Link>
-          <Link to='#!' className='portfolio__item-unavailable'>
+          <Link to='/projects/3' className='portfolio__item'>
             <img
-              src={require('./img/portfolio-03.jpg')}
+              src={require('./img/portfolioThree/header-image.jpg')}
               alt='portfolio-3'
-              className='portfolio__img-unavailable'
+              className='portfolio__img'
             />
           </Link>
           <Link to='#!' className='portfolio__item-unavailable'>

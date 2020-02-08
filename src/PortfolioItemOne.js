@@ -3,19 +3,21 @@ import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
 import logo from './img/devben.jpg';
-import headerPic from './img/dev-ben-01.jpg';
-import projectOneImage from './img/portfolio-01.png';
+import projectOneTitleImage from './img/portfolioOne/header-image.png';
+import image1 from './img/portfolioOne/image1.png';
+import image2 from './img/portfolioOne/image2.png';
+import image3 from './img/portfolioOne/image3.png';
+import image4 from './img/portfolioOne/image4.png';
+import image5 from './img/portfolioOne/image5.png';
 
-export default function PortfolioItem(props) {
+export default function PortfolioItemOne() {
   const [showMenu, toggleMenu] = useState(false);
   const navLinks = document.querySelectorAll('.nav__link');
 
   const handleClick = () => {
     if (showMenu) {
-      console.log('closing');
       document.body.classList.remove('nav-open');
     } else {
-      console.log('opening');
       document.body.classList.add('nav-open');
     }
     toggleMenu(!showMenu);
@@ -35,7 +37,7 @@ export default function PortfolioItem(props) {
     <div id='top'>
       <header>
         <div className='logo'>
-          <img src={logo} alt='headerpic' />
+          <img src={logo} alt='logo' />
         </div>
         <button className='nav-toggle' type='button' onClick={handleClick}>
           <span className='hamburger' />
@@ -91,35 +93,52 @@ export default function PortfolioItem(props) {
       </header>
       <section className='intro'>
         <h1 className='section__title section__title--intro'>
-          The title
-          <strong> of my project</strong>
+          Ticket Request Handling
+          <strong>Accenture</strong>
         </h1>
         <p className='section__subtitle section__subtitle--intro'>
-          A short subtitle
+          SUTD Second Year Project
         </p>
-        <img src={headerPic} alt='portfolio 1' className='intro__img' />
+        <img
+          src={projectOneTitleImage}
+          alt='portfolio 1'
+          className='intro__img'
+        />
       </section>
       <div className='portfolio-item-individual'>
         <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
+          Created web application for ticket requests handling using MERN stack
+          (MongoDB, Express, React, Node). Worked with specific requirements
+          issued by Accenture team to expedite company operations. Gained
+          exposure to using GraphQL as a replacement to REST 4-month long
+          project which promoted intensive app testing as well as detailed
+          version control using Git
         </p>
         <img
-          src={projectOneImage}
+          src={image1}
           alt='portfolio details'
-          className='portfolio-project-img'
+          className='portfolio-project-large-img'
         />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et
-          amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur
-          incidunt?
-        </p>
-        <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
-        </p>
+        <img
+          src={image2}
+          alt='portfolio details'
+          className='portfolio-project-large-img'
+        />
+        <img
+          src={image3}
+          alt='portfolio details'
+          className='portfolio-project-large-img'
+        />
+        <img
+          src={image4}
+          alt='portfolio details'
+          className='portfolio-project-large-img'
+        />
+        <img
+          src={image5}
+          alt='portfolio details'
+          className='portfolio-project-large-img'
+        />
       </div>
       <Footer />
     </div>

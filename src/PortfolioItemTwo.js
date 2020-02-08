@@ -3,19 +3,21 @@ import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
 import logo from './img/devben.jpg';
-import headerPic from './img/dev-ben-01.jpg';
-import projectOneImage from './img/portfolio-01.png';
+import projectTwoTitleImage from './img/portfolioTwo/header-image.jpg';
+import image2 from './img/portfolioTwo/image1.jpg';
+import image1 from './img/portfolioTwo/image2.jpg';
+import image3 from './img/portfolioTwo/image3.jpg';
+import image4 from './img/portfolioTwo/image4.jpg';
+import image5 from './img/portfolioTwo/image5.jpg';
 
-export default function PortfolioItem(props) {
+export default function PortfolioItemTwp() {
   const [showMenu, toggleMenu] = useState(false);
   const navLinks = document.querySelectorAll('.nav__link');
 
   const handleClick = () => {
     if (showMenu) {
-      console.log('closing');
       document.body.classList.remove('nav-open');
     } else {
-      console.log('opening');
       document.body.classList.add('nav-open');
     }
     toggleMenu(!showMenu);
@@ -35,7 +37,7 @@ export default function PortfolioItem(props) {
     <div id='top'>
       <header>
         <div className='logo'>
-          <img src={logo} alt='headerpic' />
+          <img src={logo} alt='logo' />
         </div>
         <button className='nav-toggle' type='button' onClick={handleClick}>
           <span className='hamburger' />
@@ -91,35 +93,50 @@ export default function PortfolioItem(props) {
       </header>
       <section className='intro'>
         <h1 className='section__title section__title--intro'>
-          The title
-          <strong> of my project</strong>
+          Food Identification and Nutrition Calculator
+          <strong>Hanyang University</strong>
         </h1>
         <p className='section__subtitle section__subtitle--intro'>
-          A short subtitle
+          Exchange Programme Final Project
         </p>
-        <img src={headerPic} alt='portfolio 1' className='intro__img' />
+        <img
+          src={projectTwoTitleImage}
+          alt='portfolio 1'
+          className='intro__img'
+        />
       </section>
       <div className='portfolio-item-individual'>
         <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
+          For details on the project and implementation methods, please click{' '}
+          <a href='https://medium.com/@benjaminlpa1996/react-native-firebase-smart-food-recognition-app-a7bfc513aa8'>
+            here.
+          </a>
         </p>
         <img
-          src={projectOneImage}
+          src={image1}
           alt='portfolio details'
           className='portfolio-project-img'
         />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et
-          amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur
-          incidunt?
-        </p>
-        <p>
-          Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo
-          molestiae eligendi sint culpa nobis voluptas sapiente voluptate,
-          magnam ipsum eius earum?
-        </p>
+        <img
+          src={image2}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
+        <img
+          src={image3}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
+        <img
+          src={image4}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
+        <img
+          src={image5}
+          alt='portfolio details'
+          className='portfolio-project-img'
+        />
       </div>
       <Footer />
     </div>
