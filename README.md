@@ -1,7 +1,7 @@
 The original code repo for my personal website.
 All commits are here, while only the final website is in "about-me" repo.
 
-Steps:
-npm i react-router react-router dom
+What i installed:
+react-router react-router dom react-icons
+
 npm install --save normalize.css
-npm i react-icons
