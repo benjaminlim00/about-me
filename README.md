@@ -3,7 +3,7 @@ My personal portfolio website built using react and sass
 ---
 
 Website can be viewed at:
-[https://benjaminlim00.github.io/about-me/]
+https://benjaminlim00.github.io/about-me/
 
 ---
 
