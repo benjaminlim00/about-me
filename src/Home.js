@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Footer from "./components/Footer";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Footer from './components/Footer';
 
 export default function Home(props) {
   const [showMenu, toggleMenu] = useState(false);
-  const navLinks = document.querySelectorAll(".nav__link");
+  const navLinks = document.querySelectorAll('.nav__link');
 
   const handleClick = () => {
     if (showMenu) {
-      document.body.classList.remove("nav-open");
+      document.body.classList.remove('nav-open');
     } else {
-      document.body.classList.add("nav-open");
+      document.body.classList.add('nav-open');
     }
     toggleMenu(!showMenu);
   };
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      document.body.classList.remove("nav-open");
+    link.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
     });
   });
 
@@ -32,7 +32,7 @@ export default function Home(props) {
     <div>
       <header>
         <div className="logo">
-          <img src={require("./img/devben.jpg")} alt="headerpic" />
+          <img src={require('./img/devben.jpg')} alt="headerpic" />
         </div>
         <button className="nav-toggle" type="button" onClick={handleClick}>
           <span className="hamburger" />
@@ -72,7 +72,7 @@ export default function Home(props) {
           mobile / web dev
         </p>
         <img
-          src={require("./img/dev-ben-01.jpg")}
+          src={require('./img/dev-ben-01.jpg')}
           alt="nme smiling"
           className="intro__img"
         />
@@ -144,7 +144,7 @@ export default function Home(props) {
           </p>
         </div>
         <img
-          src={require("./img/dev-ben-02.jpg")}
+          src={require('./img/dev-ben-02.jpg')}
           alt="me against bus"
           className="about-me__img"
         />
@@ -159,7 +159,7 @@ export default function Home(props) {
         <div className="portfolio">
           <Link to="/projects/1" className="portfolio__item">
             <img
-              src={require("./img/portfolioOne/header-image.png")}
+              src={require('./img/portfolioOne/header-image.png')}
               alt="portfolio-1"
               className="portfolio__img"
             />
@@ -167,63 +167,63 @@ export default function Home(props) {
 
           <Link to="/projects/2" className="portfolio__item">
             <img
-              src={require("./img/portfolioTwo/header-image.jpg")}
+              src={require('./img/portfolioTwo/header-image.jpg')}
               alt="portfolio-2"
               className="portfolio__img"
             />
           </Link>
           <Link to="/projects/3" className="portfolio__item">
             <img
-              src={require("./img/portfolioThree/header-image.jpg")}
+              src={require('./img/portfolioThree/header-image.jpg')}
               alt="portfolio-3"
               className="portfolio__img"
             />
           </Link>
           <Link to="/projects/4" className="portfolio__item">
             <img
-              src={require("./img/portfolioFour/header-image.jpg")}
+              src={require('./img/portfolioFour/header-image.jpg')}
               alt="portfolio-4"
+              className="portfolio__img"
+            />
+          </Link>
+          <Link to="/projects/5" className="portfolio__item">
+            <img
+              src={require('./img/portfolioFive/header-image.png')}
+              alt="portfolio-5"
               className="portfolio__img"
             />
           </Link>
           <Link to="#!" className="portfolio__item-unavailable">
             <img
-              src={require("./img/portfolio-05.jpg")}
-              alt="portfolio-5"
-              className="portfolio__img-unavailable"
-            />
-          </Link>
-          <Link to="#!" className="portfolio__item-unavailable">
-            <img
-              src={require("./img/portfolio-06.jpg")}
+              src={require('./img/portfolio-06.jpg')}
               alt="portfolio-6"
               className="portfolio__img-unavailable"
             />
           </Link>
           <Link to="#!" className="portfolio__item-unavailable">
             <img
-              src={require("./img/portfolio-07.jpg")}
+              src={require('./img/portfolio-07.jpg')}
               alt="portfolio-7"
               className="portfolio__img-unavailable"
             />
           </Link>
           <Link to="#!" className="portfolio__item-unavailable">
             <img
-              src={require("./img/portfolio-08.jpg")}
+              src={require('./img/portfolio-08.jpg')}
               alt="portfolio-8"
               className="portfolio__img-unavailable"
             />
           </Link>
           <Link to="#!" className="portfolio__item-unavailable">
             <img
-              src={require("./img/portfolio-09.jpg")}
+              src={require('./img/portfolio-09.jpg')}
               alt="portfolio-9"
               className="portfolio__img-unavailable"
             />
           </Link>
           <Link to="#!" className="portfolio__item-unavailable">
             <img
-              src={require("./img/portfolio-10.jpg")}
+              src={require('./img/portfolio-10.jpg')}
               alt="portfolio-10"
               className="portfolio__img-unavailable"
             />

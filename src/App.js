@@ -1,11 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./Home";
-import "./css/main.css";
-import PortfolioItemOne from "./PortfolioItemOne";
-import PortfolioItemTwo from "./PortfolioItemTwo";
-import PortfolioItemThree from "./PortfolioItemThree";
-import PortfolioItemFour from "./PortfolioItemFour";
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './Home';
+import './css/main.css';
+import PortfolioItemOne from './PortfolioItemOne';
+import PortfolioItemTwo from './PortfolioItemTwo';
+import PortfolioItemThree from './PortfolioItemThree';
+import PortfolioItemFour from './PortfolioItemFour';
+import PortfolioItemFive from './PortfolioItemFive';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/projects/2" component={PortfolioItemTwo} />
       <Route exact path="/projects/3" component={PortfolioItemThree} />
       <Route exact path="/projects/4" component={PortfolioItemFour} />
+      <Route exact path="/projects/5" component={PortfolioItemFive} />
     </Router>
   );
 }

@@ -489,11 +489,6 @@ header {
      object-fit: fit;
 }
 
-.portfolio__img:focus {
-  position: relative;
-  z-index: 2;
-}
-
 .portfolio__item-unavailable {
   background: #303030;
   overflow: hidden;

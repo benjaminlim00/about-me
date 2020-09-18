@@ -449,11 +449,6 @@ header {
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
   object-fit: fit;
-
-  &:focus {
-    position: relative;
-    z-index: 2;
-  }
 }
 
 .portfolio__item-unavailable {
