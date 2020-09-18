@@ -90,11 +90,11 @@ export default function PortfolioItemOne() {
       </header>
       <section className="intro">
         <h1 className="section__title section__title--intro">
-          Noix Photography App
-          <strong>Built for photographers</strong>
+          Kopi Coffee Travels
+          <strong>My personal blog</strong>
         </h1>
         <p className="section__subtitle section__subtitle--intro">
-          Personal Project
+          Personal Blog
         </p>
         <img
           src={projectFiveTitleImage}
