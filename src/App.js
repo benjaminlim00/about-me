@@ -7,6 +7,7 @@ import PortfolioItemTwo from './PortfolioItemTwo';
 import PortfolioItemThree from './PortfolioItemThree';
 import PortfolioItemFour from './PortfolioItemFour';
 import PortfolioItemFive from './PortfolioItemFive';
+import PortfolioItemSix from './PortfolioItemSix';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/projects/3" component={PortfolioItemThree} />
       <Route exact path="/projects/4" component={PortfolioItemFour} />
       <Route exact path="/projects/5" component={PortfolioItemFive} />
+      <Route exact path="/projects/6" component={PortfolioItemSix} />
     </Router>
   );
 }

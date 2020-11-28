@@ -193,11 +193,11 @@ export default function Home(props) {
               className="portfolio__img"
             />
           </Link>
-          <Link to="#!" className="portfolio__item-unavailable">
+          <Link to="/projects/6" className="portfolio__item">
             <img
-              src={require('./img/portfolio-06.jpg')}
+              src={require('./img/portfolioSix/header-image.png')}
               alt="portfolio-6"
-              className="portfolio__img-unavailable"
+              className="portfolio__img"
             />
           </Link>
           <Link to="#!" className="portfolio__item-unavailable">

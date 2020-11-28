@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
 import logo from './img/devben.jpg';
-import projectFiveTitleImage from './img/portfolioFive/header-image.png';
-import image1 from './img/portfolioFive/image1.png';
-import image2 from './img/portfolioFive/image2.png';
+import projectSixTitleImage from './img/portfolioSix/header-image.png';
+import image1 from './img/portfolioSix/image1.png';
+import image2 from './img/portfolioSix/image2.png';
+import image3 from './img/portfolioSix/image3.png';
+import image4 from './img/portfolioSix/image4.png';
 
 export default function PortfolioItemOne() {
   const [showMenu, toggleMenu] = useState(false);
@@ -90,44 +92,37 @@ export default function PortfolioItemOne() {
       </header>
       <section className="intro">
         <h1 className="section__title section__title--intro">
-          Kopi Coffee Travels
-          <strong>My personal blog</strong>
+          Bizsy.me
+          <strong>Empowering local businesses</strong>
         </h1>
         <p className="section__subtitle section__subtitle--intro">
-          Personal Blog
+          Online directory
         </p>
         <img
-          src={projectFiveTitleImage}
+          src={projectSixTitleImage}
           alt="portfolio 5"
           className="intro__img"
         />
       </section>
       <div className="portfolio-item-individual">
         <p>
-          This is a website I built for my personal use, as a blog to capture my
-          travel stories.
+          During the Covid pandemic period, a conversation with my mom sparked
+          an idea in me to boost the outreach of local businesses in Singapore
+          whom we felt were lacking the audience that they deserved. I thought
+          of a platform where you can filter through individual unique
+          home-grown / local businesses. Over the next few months, I spent many
+          nights on that idea and achieved the goal to have one single platform
+          where people can find the most interesting and undiscovered shops, be
+          it shops selling cheesecakes, brownies, earrings, or even manicure
+          services.
           <br />
           <br />
-          This website was build in Gatsby and allowed me to understand how I
-          can build a blazing fast static site using React with Gatsby. This
-          website also allowed me to use Contentful as a CMS to allow easy
-          addition of new data to the site.
+          The website provided me a good experience in providing users with good
+          UI/UX as well as the development of responsive web design.
           <br />
           <br />
-          Some additional tools I used are Mailchimp and FormSpree to facilitate
-          email sending and subscription.
-          <br />
-          <br />
-          The website can be visited at{' '}
-          <a href="https://kopicoffeetravels.netlify.app/">
-            https://kopicoffeetravels.netlify.app/
-          </a>
+          The website can be visited at <a href="www.bizsy.me">www.bizsy.me</a>
         </p>
-        <img
-          src={projectFiveTitleImage}
-          alt="portfolio details"
-          className="portfolio-project-large-img"
-        />
         <img
           src={image1}
           alt="portfolio details"
@@ -135,6 +130,16 @@ export default function PortfolioItemOne() {
         />
         <img
           src={image2}
+          alt="portfolio details"
+          className="portfolio-project-large-img"
+        />
+        <img
+          src={image3}
+          alt="portfolio details"
+          className="portfolio-project-large-img"
+        />
+        <img
+          src={image4}
           alt="portfolio details"
           className="portfolio-project-large-img"
         />
